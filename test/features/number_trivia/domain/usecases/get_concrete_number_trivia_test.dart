@@ -13,7 +13,7 @@ class NumberTriviaRepositoryTest extends Mock
 
 @GenerateMocks([NumberTriviaRepositoryTest])
 void main() {
-  GetConcreteNumberTrivia? useCase;
+  late GetConcreteNumberTrivia useCase;
   late MockNumberTriviaRepositoryTest mockNumberTriviaRepository;
 
   const tNumber = 1;
@@ -32,7 +32,7 @@ void main() {
           .thenAnswer((realInvocation) async => const Right(tNumberTrivia));
 
       // act
-      final result = await useCase?.execute(number: tNumber);
+      final result = await useCase(const Params(number: tNumber));
 
       // assert
       expect(result, const Right(tNumberTrivia));
