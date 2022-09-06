@@ -70,12 +70,11 @@ class MockLocalDataSourceTest extends _i1.Mock
                       this, Invocation.method(#getLastNumberTrivia, []))))
           as _i4.Future<_i2.NumberTriviaModel>);
   @override
-  _i4.Future<void> cachedNumberTrivia(_i2.NumberTriviaModel? triviaToCache) =>
+  _i4.Future<void>? cachedNumberTrivia(_i2.NumberTriviaModel? triviaToCache) =>
       (super.noSuchMethod(
               Invocation.method(#cachedNumberTrivia, [triviaToCache]),
-              returnValue: _i4.Future<void>.value(),
               returnValueForMissingStub: _i4.Future<void>.value())
-          as _i4.Future<void>);
+          as _i4.Future<void>?);
 }
 
 /// A class which mocks [NetworkInfoTest].
