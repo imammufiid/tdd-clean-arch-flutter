@@ -10,7 +10,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
 import 'number_trivia_local_source_test.mocks.dart';
-import 'package:matcher/matcher.dart';
 
 class SharedPreferencesTest extends Mock implements SharedPreferences {}
 

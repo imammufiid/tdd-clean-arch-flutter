@@ -14,3 +14,8 @@ class CacheFailure extends Failures {
   @override
   List<Object?> get props => [const<dynamic>[]];
 }
+
+class InvalidInputFailure extends Failures {
+  @override
+  List<Object?> get props => [const<dynamic>[]];
+}
