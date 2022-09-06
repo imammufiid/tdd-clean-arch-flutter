@@ -1,5 +1,5 @@
 import 'package:flutter_tdd/core/error/exceptions.dart';
-import 'package:flutter_tdd/core/platform/network_info.dart';
+import 'package:flutter_tdd/core/network/network_info.dart';
 import 'package:flutter_tdd/features/number_trivia/data/models/number_trivia_model.dart';
 import 'package:flutter_tdd/features/number_trivia/data/source/number_trivia_local_source.dart';
 import 'package:flutter_tdd/features/number_trivia/data/source/number_trivia_remote_source.dart';
@@ -8,7 +8,7 @@ import 'package:flutter_tdd/core/error/failures.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_tdd/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 
-typedef Future<NumberTriviaModel> _ConcreteOrRandomChooser();
+typedef _ConcreteOrRandomChooser = Future<NumberTriviaModel> Function();
 
 class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
   final NumberTriviaRemoteSource remoteSource;
@@ -34,7 +34,7 @@ class NumberTriviaRepositoryImpl implements NumberTriviaRepository {
   Future<Either<Failures, NumberTrivia>>? _getTrivia(
       _ConcreteOrRandomChooser block,
   ) async {
-    if (await networkInfo.isConnected) {
+    if (await networkInfo.isConnected == true) {
       try {
         final result = await block();
         localSource.cachedNumberTrivia(result);

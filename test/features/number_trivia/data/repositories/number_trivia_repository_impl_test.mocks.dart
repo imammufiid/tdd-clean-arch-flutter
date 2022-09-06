@@ -85,9 +85,4 @@ class MockNetworkInfoTest extends _i1.Mock implements _i3.NetworkInfoTest {
   MockNetworkInfoTest() {
     _i1.throwOnMissingStub(this);
   }
-
-  @override
-  _i4.Future<bool> get isConnected =>
-      (super.noSuchMethod(Invocation.getter(#isConnected),
-          returnValue: _i4.Future<bool>.value(false)) as _i4.Future<bool>);
 }
