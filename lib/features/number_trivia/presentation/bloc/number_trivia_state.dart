@@ -11,10 +11,10 @@ class OnIdle extends NumberTriviaState {}
 
 class OnLoading extends NumberTriviaState {}
 
-class OnLoaded extends NumberTriviaState {
+class OnComplete extends NumberTriviaState {
   final NumberTrivia trivia;
 
-  const OnLoaded({required this.trivia});
+  const OnComplete({required this.trivia});
 }
 
 class OnError extends NumberTriviaState {
