@@ -38,12 +38,12 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
       }
     });
 
-    on<GetTriviaForConcreteNumber>((event, emit) {
+    on<GetTriviaForConcreteNumber>((event, emit) async {
       final inputEither =
           inputConvert.stringToUnsignedInteger(event.numberString);
       emit(OnLoading());
 
-      inputEither.fold(
+      await inputEither.fold(
         (failure) {
           emit(const OnError(errorMessage: invalidInputFailureMessage));
         },
