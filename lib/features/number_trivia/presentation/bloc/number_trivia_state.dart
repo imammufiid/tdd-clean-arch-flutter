@@ -15,10 +15,16 @@ class OnComplete extends NumberTriviaState {
   final NumberTrivia trivia;
 
   const OnComplete({required this.trivia});
+
+  @override
+  List<Object> get props => [trivia];
 }
 
 class OnError extends NumberTriviaState {
   final String errorMessage;
 
   const OnError({required this.errorMessage});
+
+  @override
+  List<Object> get props => [errorMessage];
 }
