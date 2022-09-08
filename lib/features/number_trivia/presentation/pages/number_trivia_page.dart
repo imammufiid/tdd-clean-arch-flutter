@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:dependencies/bloc/bloc.dart';
 import 'package:flutter_tdd/features/number_trivia/presentation/bloc/number_trivia_bloc.dart';
 
-import '../../../../di/injection_container.dart';
+import 'package:dependencies/getit/get_it.dart';
 import '../widgets/widgets.dart';
 
 class NumberTriviaPage extends StatelessWidget {

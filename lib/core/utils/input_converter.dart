@@ -1,4 +1,4 @@
-import 'package:dartz/dartz.dart';
+import 'package:dependencies/dartz/dartz.dart';
 import 'package:flutter_tdd/core/error/failures.dart';
 
 class InputConvert {

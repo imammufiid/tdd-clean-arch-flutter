@@ -5,7 +5,7 @@ import 'package:flutter_tdd/features/number_trivia/data/source/number_trivia_loc
 import 'package:flutter_tdd/features/number_trivia/data/source/number_trivia_remote_source.dart';
 import 'package:flutter_tdd/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:flutter_tdd/core/error/failures.dart';
-import 'package:dartz/dartz.dart';
+import 'package:dependencies/dartz/dartz.dart';
 import 'package:flutter_tdd/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 
 typedef _ConcreteOrRandomChooser = Future<NumberTriviaModel> Function();

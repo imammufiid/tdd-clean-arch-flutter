@@ -7,12 +7,10 @@ import 'package:flutter_tdd/features/number_trivia/domain/repositories/number_tr
 import 'package:flutter_tdd/features/number_trivia/domain/usecases/get_concrete_number_trivia.dart';
 import 'package:flutter_tdd/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
 import 'package:flutter_tdd/features/number_trivia/presentation/bloc/number_trivia_bloc.dart';
-import 'package:get_it/get_it.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:http/http.dart' as http;
-
-final sl = GetIt.instance;
+import 'package:dependencies/getit/get_it.dart';
+import 'package:dependencies/internet_conn_checker/internet_conn_checker.dart';
+import 'package:dependencies/shared_preferences/shared_preferences.dart';
+import 'package:dependencies/http/http.dart' as http;
 
 Future<void> init() async {
   /// Features

@@ -1,6 +1,6 @@
-import 'package:bloc/bloc.dart';
-import 'package:dartz/dartz.dart';
-import 'package:equatable/equatable.dart';
+import 'package:dependencies/bloc/bloc.dart';
+import 'package:dependencies/dartz/dartz.dart';
+import 'package:dependencies/equatable/equatable.dart';
 import 'package:flutter_tdd/core/error/failures.dart';
 import 'package:flutter_tdd/core/usecases/usecase.dart';
 import 'package:flutter_tdd/core/utils/input_converter.dart';
