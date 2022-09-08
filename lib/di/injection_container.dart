@@ -1,5 +1,5 @@
-import 'package:flutter_tdd/core/network/network_info.dart';
-import 'package:flutter_tdd/core/utils/input_converter.dart';
+import 'package:core/network/network_info.dart';
+import 'package:core/utils/input_converter.dart';
 import 'package:flutter_tdd/features/number_trivia/data/repositories/number_trivia_repository_impl.dart';
 import 'package:flutter_tdd/features/number_trivia/data/source/number_trivia_local_source.dart';
 import 'package:flutter_tdd/features/number_trivia/data/source/number_trivia_remote_source.dart';

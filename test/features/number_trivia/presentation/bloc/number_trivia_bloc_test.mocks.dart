@@ -5,9 +5,9 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i5;
 
-import 'package:dartz/dartz.dart' as _i3;
-import 'package:flutter_tdd/core/error/failures.dart' as _i6;
-import 'package:flutter_tdd/core/usecases/usecase.dart' as _i9;
+import 'package:core/error/failures.dart' as _i6;
+import 'package:core/usecases/usecase.dart' as _i9;
+import 'package:dependencies/dartz/dartz.dart' as _i3;
 import 'package:flutter_tdd/features/number_trivia/domain/entities/number_trivia.dart'
     as _i7;
 import 'package:flutter_tdd/features/number_trivia/domain/repositories/number_trivia_repository.dart'

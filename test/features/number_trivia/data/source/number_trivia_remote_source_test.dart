@@ -1,12 +1,12 @@
 import 'dart:convert';
 
-import 'package:flutter_tdd/core/error/exceptions.dart';
+import 'package:core/error/exceptions.dart';
 import 'package:flutter_tdd/features/number_trivia/data/models/number_trivia_model.dart';
 import 'package:flutter_tdd/features/number_trivia/data/source/number_trivia_remote_source.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
-import 'package:http/http.dart' as http;
+import 'package:dependencies/http/http.dart' as http;
 
 import '../../../../fixtures/fixture_reader.dart';
 import 'number_trivia_remote_source_test.mocks.dart';

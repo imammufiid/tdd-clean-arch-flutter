@@ -1,7 +1,7 @@
+import 'package:core/error/failures.dart';
+import 'package:core/usecases/usecase.dart';
 import 'package:dependencies/dartz/dartz.dart';
 import 'package:dependencies/equatable/equatable.dart';
-import 'package:flutter_tdd/core/error/failures.dart';
-import 'package:flutter_tdd/core/usecases/usecase.dart';
 import '../entities/number_trivia.dart';
 
 import '../repositories/number_trivia_repository.dart';

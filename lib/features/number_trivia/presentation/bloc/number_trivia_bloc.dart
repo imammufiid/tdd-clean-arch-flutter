@@ -1,9 +1,9 @@
+import 'package:core/error/failures.dart';
+import 'package:core/usecases/usecase.dart';
+import 'package:core/utils/input_converter.dart';
 import 'package:dependencies/bloc/bloc.dart';
 import 'package:dependencies/dartz/dartz.dart';
 import 'package:dependencies/equatable/equatable.dart';
-import 'package:flutter_tdd/core/error/failures.dart';
-import 'package:flutter_tdd/core/usecases/usecase.dart';
-import 'package:flutter_tdd/core/utils/input_converter.dart';
 import 'package:flutter_tdd/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:flutter_tdd/features/number_trivia/domain/usecases/get_concrete_number_trivia.dart';
 import 'package:flutter_tdd/features/number_trivia/domain/usecases/get_random_number_trivia.dart';

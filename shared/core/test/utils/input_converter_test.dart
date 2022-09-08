@@ -1,6 +1,6 @@
-import 'package:dartz/dartz.dart';
-import 'package:flutter_tdd/core/error/failures.dart';
-import 'package:flutter_tdd/core/utils/input_converter.dart';
+import 'package:core/error/failures.dart';
+import 'package:core/utils/input_converter.dart';
+import 'package:dependencies/dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
